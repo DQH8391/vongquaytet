@@ -128,14 +128,14 @@
     </div>
 
     <script>
-        const myArray = ['20k','30k','40k', '50k', '100k', '200k','mất lượt','thêm lượt'];
+        const myArray = ['mất lượt','thêm lượt','20k','30k','40k', '50k', '100k', '200k'];
 
         function getRandomFromArrayWithProbability(arr) {
             const randomNumber = Math.random();
             const probabilityThreshold = 0.1;
 
             if (randomNumber <= probabilityThreshold) {
-                return arr.slice(-4)[Math.floor(Math.random() * 2)];
+                return arr.slice(-2)[Math.floor(Math.random() * 2)];
             } else {
                 return arr[Math.floor(Math.random() * (arr.length - 2))];
             }
